@@ -7,7 +7,7 @@ const inputMax = document.getElementById("input-max");
 
 //buttons
 const allowRepetitionCheckbox = document.getElementById(
-  "allow-repeats-checkbox"
+  "allow-repeats-checkbox",
 );
 const btnDraw = document.getElementById("btn-draw");
 const btnDrawAgain = document.getElementById("btn-repeat-draw");
@@ -42,23 +42,21 @@ btnDraw.addEventListener("click", (event) => {
   try {
     if (quantityInput.value <= 0) {
       throw new Error(
-        "A quantidade de números sorteados não pode ser igual a 0."
+        "A quantidade de números sorteados não pode ser igual a 0.",
       );
     } else if (
       allowRepetitionCheckbox.checked &&
       quantityInput.value > inputMax.value - inputMin.value + 1
     ) {
       throw new Error(
-        "A quantidade de números sorteados não pode ser maior que o intervalo de números possíveis sem repetição."
+        "A quantidade de números sorteados não pode ser maior que o intervalo de números possíveis sem repetição.",
       );
-    } else if (inputMin.value > inputMax.value) {
+    } else if (parseInt(inputMin.value) > parseInt(inputMax.value)) {
       throw new Error(
-        "O número inserido no campo “DE” deve sempre ser menor que o número inserido no campo “ATÉ”"
+        "O número inserido no campo “DE” deve sempre ser menor que o número inserido no campo “ATÉ”",
       );
     } else if (inputMin.value === "" || inputMax.value === "") {
-      throw new Error(
-        "Os campos “DE” e “ATÉ” não podem estar vazios."
-      );
+      throw new Error("Os campos “DE” e “ATÉ” não podem estar vazios.");
     } else {
       const drawnNumbers = createArray();
       updateDisplayNumbers(drawnNumbers);
@@ -153,7 +151,7 @@ async function updateDisplayNumbers(drawNumbers) {
 
 function updateDrawingAcc() {
   const drawingAccField = document.querySelector(
-    "#results-container header span"
+    "#results-container header span",
   );
   drawingAcc++;
   drawingAccField.textContent = `${drawingAcc}º resultado`;
