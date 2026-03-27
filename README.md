@@ -19,7 +19,6 @@ Este projeto foi construído para:
 ## 📚 Principais aprendizados  
 - Leitura e implementação de **requisitos funcionais**, traduzindo regras em comportamento real na interface.  
 - Prática aprofundada com **manipulação da DOM**, utilizando seletores, acessando propriedades e atualizando elementos dinamicamente.  
-- Desenvolvimento da lógica de **sorteio numérico**, gerando números aleatórios e garantindo ausência de repetição quando solicitado.  
 - Criação de **validações robustas**:  
   - campos obrigatórios,  
   - limite máximo maior que o mínimo,  
@@ -28,16 +27,6 @@ Este projeto foi construído para:
 - Uso de **event listeners** para interações do usuário e atualização contínua da interface.  
 - Adição de **animação na exibição dos resultados**, reforçando feedback visual e melhorando a experiência do usuário.  
 
-## 🧪 Como usar  
-1. Informe a quantidade de números desejados.  
-2. Defina o valor mínimo e o valor máximo do intervalo.  
-3. Escolha se deseja permitir números repetidos.  
-4. Clique em **Sortear**.  
-5. Veja o resultado aparecer com animação.  
-6. Altere os valores a qualquer momento para sortear novamente.  
-
-### 👤 Autora  
+### Por:
 **Isabella Guimarães**  
 Estudante de Análise e Desenvolvimento de Sistemas
-
-Feito com 💜 durante a Trilha FullStack da Rocketseat.
